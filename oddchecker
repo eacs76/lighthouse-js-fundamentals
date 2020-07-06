@@ -1,0 +1,21 @@
+ const stations = [
+  ['Big Bear Donair', 10, 'restaurant'],
+  ['Bright Lights Elementary', 50, 'school'],
+  ['Moose Mountain Community Centre', 45, 'community centre']
+];
+let goodstation = [];
+let place = stations[2];
+let size = stations[1];
+function chooseStations (stations) {
+  for (const station of stations) {
+            if (size >= 20) {
+              if (place === 'school' || place === 'community centre')
+        {         goodstation.push (stations[0]);
+                  return goodstation;
+		console.log(goodstation);
+
+        }
+}
+}
+}
+console.log(chooseStations (stations));
